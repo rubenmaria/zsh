@@ -4,7 +4,7 @@ alias f='zi'
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
 
 #Jump TO
-alias goto='cd $(find . -type d -print | fzf)'
+alias goto='cd $({find ~/workspace -type d -print & find ~/uni -type d -print & find ~/.config -type d -print} | fzf)'
 alias nvimrc='cd ~/.config/nvim/'
 alias wise23='cd ~/uni/wise-23/'
 alias zshrc='cd ~/.config/zsh'
