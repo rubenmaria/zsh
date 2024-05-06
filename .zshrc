@@ -10,6 +10,7 @@ HISTFILE=~/.zsh_history
 
 # source
 source "$HOME/.config/zsh/.config/aliases.zsh"
+source "virtualenvwrapper.sh"
 
 # plugins
 zplug "esc/conda-zsh-completion"
@@ -29,6 +30,8 @@ DRACULA_DISPLAY_CONTEXT=1
 DRACULA_DISPLAY_FULL_CWD=1
 DRACULA_DISPLAY_NEW_LINE=1
 
+#options
+setopt extendedglob
 
 # keybinds
 bindkey '^ ' autosuggest-accept

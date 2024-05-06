@@ -52,7 +52,7 @@ alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
 alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 
 # For when keys break
-alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys"
+alias archlinux-fix-keys="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys"
 
 # systemd
 alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
@@ -64,3 +64,5 @@ if [[ $TERM == "xterm-kitty" ]]; then
 fi
 
 alias ls='ls --color=auto'
+alias la='ls -a'
+alias mvld='f() { mv "/home/rubs/Downloads/$(ls -t ~/Downloads | head -n 1)" $1 };f'
