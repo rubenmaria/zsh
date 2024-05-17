@@ -9,7 +9,7 @@ source ~/.zplug/init.zsh
 HISTFILE=~/.zsh_history
 
 # source
-source "$HOME/.config/zsh/.config/aliases.zsh"
+source "aliases.zsh"
 source "virtualenvwrapper.sh"
 
 # plugins
