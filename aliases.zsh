@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# Jump TO
-alias goto='cd $({find ~/workspace -type d -print & find ~/uni -type d -print & \
+# Jump To
+alias jt='cd $({find ~/workspace -type d -print & find ~/uni -type d -print & \
   find ~/.config -type d -print & find ~/personal/ -type d -print} | fzf)'
 
 # Colorize grep output (good for log files)
@@ -26,3 +26,12 @@ alias mvld='f() { mv "/home/rubs/Downloads/$(ls -t ~/Downloads | head -n 1)" $1 
 alias gitlog='git log --all --decorate --oneline --graph'
 alias storage='sudo du -hsx * | sort -rh | head -n 40'
 alias rm-pacman-cache='paccache -rk1'
+
+# Speed
+alias gpush="git push"
+alias gpull="git pull"
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit --verbose"
+alias py="python"
+
